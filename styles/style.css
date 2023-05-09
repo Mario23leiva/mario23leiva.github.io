@@ -98,23 +98,30 @@ form input[type="submit"] {
     padding: 0.5rem;
     border-radius: 0.25rem;
     cursor: pointer;
+    border: #333 1px solid;
 }
 
 form input[type="submit"]:hover {
     background-color: #fff;
     color: #333;
 }
-
-#about-me img{
-    float: left; 
+  
+#about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  
+#about-me img {
     margin-right: 20px;
     width: 300px;
 }
-
-#about-me div{
-    width: calc(100% - 220px);
-    float: none;
+  
+#about-me div {
+    flex-grow: 1;
 }
+  
+
 
 .contenidoPagina {
 	display: flex;
@@ -178,3 +185,41 @@ form input[type="submit"]:hover {
 	font-size: 16px;
 	line-height: 1.5;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+  
+.footer-left {
+    flex: 1;
+}
+  
+.footer-right {
+    display: flex;
+}
+  
+.language-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.language-buttons button {
+    margin-left: 10px;
+    padding: 0;
+    width: 40px;
+    height: 30px;
+    line-height: 0;
+}
+  
+.language-buttons button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+  
+  

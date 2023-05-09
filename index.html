@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="js/javascript.js"></script>
     <title>Portfolio - Multiplatform Application Development</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to my portfolio</h1>
+        <h1 data-translate="welcome"></h1>
         <nav>
             <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="#about" data-translate="aboutMe"></a></li>
+                <li><a href="#projects" data-translate="projects"></a></li>
+                <li><a href="#contact" data-translate="contactMe"></a></li>
             </ul>
         </nav>
     </header>
@@ -22,8 +23,8 @@
             <img src="multimedia/img/yo.png" alt="jaja soy yo XD">
             <div>
                 <h2>About Me</h2>
-                <p>Hi, my name is John Doe and I am currently studying multiplatform application development. I have always been passionate about technology and creating new things, which led me to pursue this field of study. I am excited to learn about the latest technologies and develop applications that can work seamlessly across multiple platforms.</p>
-                <p>In my free time, I enjoy playing video games, watching movies, and experimenting with new technologies. I am always eager to learn and improve my skills, and I am constantly seeking new challenges to push myself further.</p>
+                <p>Hi, my name is Mario Leiva and I am currently studying multiplatform application development. I have always been passionate about technology and creating new things, which led me to pursue this field of study. I am excited to learn about the latest technologies and develop applications that can work seamlessly across multiple platforms.</p>
+                <p>In my free time, I enjoy making sports, watching movies, and traveling on the mountain. I am always eager to learn and improve my skills, and I am constantly seeking new challenges to push myself further.</p>
             </div>
         </section>
         <div class="contenidoPagina">
@@ -52,21 +53,30 @@
 			</div>
 		</div>                  
         <section id="contact-me">
-            <h2>Contact Me</h2>
+            <h2 data-translate="contactMe"></h2>
             <form>
-                <label for="name">Name:</label>
+                <label for="name" data-translate="name"></label>
                 <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
+                <label for="email" data-translate="email"></label>
                 <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <input type="submit" value="Submit">
+                <label for="message" data-translate="message"></label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <input type="submit" data-translate="submit" value="Submit"></input>
             </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 John Doe</p>
-    </footer>
+        <div class="footer-left">
+            <p>&copy; 2023 Mario Leiva</p>
+        </div>
+        <div class="footer-right">
+            <div class="language-buttons">
+                <button id="btn-es" onclick="changeLanguage('es')"><img src="multimedia/img/idiomas/spanish.jpg" alt="Español"></button>
+                <button id="btn-en" onclick="changeLanguage('en')"><img src="multimedia/img/idiomas/englishpitinglish.png" alt="English"></button>
+                <button id="btn-fr" onclick="changeLanguage('fr')"><img src="multimedia/img/idiomas/francia.png" alt="Français"></button>
+            </div>
+        </div>
+    </footer>      
 </body>
 </html>
 
