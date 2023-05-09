@@ -105,62 +105,76 @@ form input[type="submit"]:hover {
     color: #333;
 }
 
-#projects {
-    background-color: #f7f7f7;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-  
-.section-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-  
-.projects-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-}
-  
-.project {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px;
+#about-me img{
+    float: left; 
+    margin-right: 20px;
     width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+}
+
+#about-me div{
+    width: calc(100% - 220px);
+    float: none;
+}
+
+.contenidoPagina {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	margin-top: 50px;
 }
   
-.project h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
+.objeto {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
 }
   
-.project img {
+.objeto:hover img {
+	filter: blur(10px);
+	transition: all 0.5s ease-in-out;
+}
+  
+.objeto:hover .texto {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all 0.5s ease-in-out;
+}
+  
+.objeto img {
+	position: absolute;
+	top: 0;
+	left: 0;
     padding: 10px;
-    width: 300px;
-    margin-bottom: 10px;
+	width: 100%;
+	object-fit: cover;
 }
   
-  
-#projects ul li img:hover {
-    content: attr(title);
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: black;
-    font-size: 0.8rem;
-    z-index: 1;
+.objeto .texto {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 20px;
+	opacity: 0;
+	transform: translateY(100%);
+	transition: all 0.5s ease-in-out;
+	justify-content: center;
+	align-items: center;
 }
   
+.objeto h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+  
+.objeto p {
+	font-size: 16px;
+	line-height: 1.5;
+}
