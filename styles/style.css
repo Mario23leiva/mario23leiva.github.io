@@ -233,20 +233,84 @@ footer {
   
 .bloque1{
     display: flex;
-    border: #333 1px solid;
 }
 
 .bloque2{
     display: flex;
-    border: #333 1px solid;
 }
 
-.bloque{
-    border: #333 1px solid;
+.bloque.objeto {
+    margin: 30px;
+    position: relative;
+    width: 300px;
     height: 400px;
-    width: 400px;
-    padding: 30px;
-}
-
-
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .bloque.objeto:hover {
+    transform: rotateY(180deg);
+  }
+  
+  .bloque.objeto .card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .bloque.objeto .card .front,
+  .bloque.objeto .card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .bloque.objeto .card .front {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    transform: rotateY(0deg);
+  }
+  
+  .bloque.objeto .card .back {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    transform: rotateY(180deg);
+    visibility: hidden; 
+  }
+  
+  .bloque.objeto .card .back h3,
+  .bloque.objeto .card .back p {
+    color: #000; 
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    visibility: visible; /* Hace que el contenido de la cara trasera sea visible en el estado de rotación */
+  }
+  
+  .bloque.objeto:hover .card .front img {
+    display: none;
+  }
+  
+  .bloque.objeto:hover .card .back p {
+    display: block;
+  }
 
