@@ -64,8 +64,8 @@ var translations = {
         message: "Message",
         submit: "Envoyer",
         copyright: "&copy; 2023 Mario Leiva",
-        aboutMe1: "",
-        aboutMe2: "",
+        aboutMe1: "Bonjour, je m'appelle Mario Leiva et je suis actuellement en train d'étudier le développement d'applications multiplateformes. J'ai toujours été passionné par la technologie et la création de nouvelles choses, ce qui m'a conduit à poursuivre ce domaine d'études. Je suis enthousiaste à l'idée d'apprendre les dernières technologies et de développer des applications qui peuvent fonctionner parfaitement sur plusieurs plateformes.",
+        aboutMe2: "Pendant mon temps libre, j'aime faire du sport, regarder des films et aller à la montagne. Je suis toujours désireux d'apprendre et d'améliorer mes compétences, et je cherche constamment de nouveaux défis pour continuer à m'améliorer.",
         titulo1: "Site web Buscaminas", 
         descripcion1: "C'était mon premier site web, il a été construit avec Wordpress et contient des informations sur le jeu Buscaminas et comment y jouer. Vous pouvez trouver tout ce que vous devez savoir sur le jeu, y compris les règles et comment y jouer, sur cette page et d'autres choses aléatoires😎👍",
         digitalStrategy: "Stratégie Digitale",
@@ -152,6 +152,20 @@ $(window).scroll(function() {
     });
 });
   
+
+const blocks = document.querySelectorAll('.bloque.objeto');
+
+blocks.forEach(block => {
+  block.addEventListener('mouseover', () => {
+    block.querySelector('.front img').style.opacity = 0;
+    block.querySelector('.back').style.opacity = 1;
+  });
+
+  block.addEventListener('mouseout', () => {
+    block.querySelector('.front img').style.opacity = 1;
+    block.querySelector('.back').style.opacity = 0;
+  });
+});
 
 
   
