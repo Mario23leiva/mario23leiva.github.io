@@ -20,38 +20,70 @@
     </header>
     <main>
         <section id="about-me">
-            <img src="multimedia/img/yo.png" alt="jaja soy yo XD">
+            <img src="multimedia/img/yo.png" alt="jaja soy yo XD" onclick="changeLanguage('zh')">
             <div>
-                <h2>About Me</h2>
-                <p>Hi, my name is Mario Leiva and I am currently studying multiplatform application development. I have always been passionate about technology and creating new things, which led me to pursue this field of study. I am excited to learn about the latest technologies and develop applications that can work seamlessly across multiple platforms.</p>
-                <p>In my free time, I enjoy making sports, watching movies, and traveling on the mountain. I am always eager to learn and improve my skills, and I am constantly seeking new challenges to push myself further.</p>
+                <h2 data-translate="aboutMe"></h2>
+                <p data-translate="aboutMe1"></p>
+                <p data-translate="aboutMe2"></p>
             </div>
         </section>
         <div class="contenidoPagina">
-			<div class="objeto">
+            <div class="bloques">
+                <div class="bloque1">
+                    <div class="bloque">
+                        <h3 data-translate="digitalStrategy"></h3>
+                        <p data-translate="digitalStrategyDesc"></p>
+                    </div>
+                    <div class="bloque">
+                        <h3 data-translate="uiDesign"></h3>
+                        <p data-translate="uiDesignDesc"></p>
+                    </div>
+                    <div class="bloque">
+                        <h3 data-translate="contentWriting"></h3>
+                        <p data-translate="contentWritingDesc"></p>
+                    </div>
+                </div>
+                <div class="bloque2">
+                    <div class="bloque">
+                        <h3 data-translate="softwareDevelopment"></h3>
+                        <p data-translate="softwareDevelopmentDesc"></p>
+                    </div>
+                    <div class="bloque">
+                        <h3 data-translate="webDevelopment"></h3>
+                        <p data-translate="webDevelopmentDesc"></p>
+                    </div>
+                    <div class="bloque">
+                        <h3 data-translate="socialMedia"></h3>
+                        <p data-translate="socialMediaDesc"></p>
+                    </div>
+                </div>
+            </div>                   
+		</div>   
+        <div class="contenidoPagina">
+            <div class="objeto elemento">
                 <a href="http://tengocancerxd.rf.gd/">
                     <img src="multimedia/img/buscaminasLogo.png" alt="">
                     <div class="texto">
-                    <h2>Buscaminas Website</h2>
-                    <p>That was my first Website, it was built using Wordpress and contains information about the Minesweeper game and how to play it. You can find everything you need to know about the game, including the rules and how to play it, on this page and other randoms things 😎👍</p>
+                        <h2 data-translate="titulo1"></h2>
+                        <p data-translate="descripcion1"></p>
                     </div>
                 </a>
 			</div>
-			<div class="objeto">
+			<div class="objeto elemento">
 			  <img src="multimedia/img/buscaminasLogo.png" alt="">
 			  <div class="texto">
 				<h2>Casual</h2>
 				<p>Encuentra en nuestra colección de ropa casual el look perfecto para cualquier ocasión, desde un día de compras hasta una cena con amigos.</p>
 			  </div>
 			</div>
-			<div class="objeto">
+			<div class="objeto elemento">
 			  <img src="multimedia/img/buscaminasLogo.png" alt="">
 			  <div class="texto">
 				<h2>Oversize</h2>
 				<p>Da un toque diferente a tu estilo con nuestra selección de ropa oversize, diseños únicos y originales que no dejarán indiferente a nadie.</p>
 			  </div>
 			</div>
-		</div>                  
+        </div>               
         <section id="contact-me">
             <h2 data-translate="contactMe"></h2>
             <form>

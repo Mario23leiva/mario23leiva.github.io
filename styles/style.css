@@ -222,4 +222,31 @@ footer {
     object-fit: contain;
 }
   
+.aparece {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
   
+.aparece.visible {
+    opacity: 1;
+}
+  
+.bloque1{
+    display: flex;
+    border: #333 1px solid;
+}
+
+.bloque2{
+    display: flex;
+    border: #333 1px solid;
+}
+
+.bloque{
+    border: #333 1px solid;
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+}
+
+
+
