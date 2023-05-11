@@ -9,6 +9,8 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    background: url('../multimedia/img/fondoMinecraft.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 /* Estilos del encabezado */
@@ -70,6 +72,10 @@ section h2 {
 
 section p {
     margin-bottom: 1rem;
+}
+
+section#projects h2{
+    text-align: center;
 }
 
 /* Estilos del formulario de contacto */
@@ -151,6 +157,14 @@ form input[type="submit"]:hover {
 	transform: translateY(0);
 	transition: all 0.5s ease-in-out;
 }
+
+.bloque.objeto {
+    background-color: rgba(255, 255, 255, 0.2); /* Establece un fondo semitransparente */
+    padding: 20px; /* Agrega algo de relleno para que el efecto sea más visible */
+    margin-bottom: 20px; /* Añade un margen inferior para separar los objetos */
+    backdrop-filter: blur(10px); /* Aplica un filtro de desenfoque al fondo detrás del objeto */
+}
+  
   
 .objeto img {
 	position: absolute;
