@@ -141,6 +141,17 @@ function changeLanguage(lang, defaultLang) {
     });
 }
 
+function cambiarFondo(picture) {
+    if (picture == "nether") {
+        document.body.style.backgroundImage = "url('../multimedia/img/fondoNether.png')";
+    } else if (picture == "otra-imagen") {
+        // Aquí puedes establecer otra imagen de fondo
+    } else {
+        document.body.style.backgroundImage = "url('../multimedia/img/fondoMinecraft.jpg')";
+    }
+}
+  
+
 window.onload = function() {
     // Cargar el texto en inglés por defecto
     changeLanguage("en");
