@@ -1,7 +1,77 @@
 // Variable para saber el fondo actual
 var fondoActual = "";
+var idiomaActual = "";
 
 // Objeto con las traducciones
+
+  
+// Función para cambiar el idioma
+function changeLanguage(lang, defaultLang) {
+    // Si no se proporciona el idioma, utilizar el idioma por defecto (en este caso, inglés)
+    lang = lang || defaultLang || "en";
+    
+    if(idiomaActual == "zh" && lang == "zh") {
+        lang = "en";
+    }
+
+    // Obtener todos los elementos con la etiqueta 'h1', 'a', 'label' y 'button'
+    var elements = document.getElementsByTagName("h1");
+    elements = Array.prototype.slice.call(elements);
+    elements = elements.concat(Array.prototype.slice.call(document.getElementsByTagName("a")));
+    elements = elements.concat(Array.prototype.slice.call(document.getElementsByTagName("label")));
+    elements = elements.concat(Array.prototype.slice.call(document.getElementsByTagName("button")));
+    elements = elements.concat(Array.prototype.slice.call(document.getElementsByTagName("h2")));
+    elements = elements.concat(Array.prototype.slice.call(document.getElementsByTagName("p")));
+    elements = elements.concat(Array.prototype.slice.call(document.getElementsByTagName("h3")));
+  
+    // Filtrar los elementos que tienen el atributo 'data-translate'
+    var translatableElements = elements.filter(function(element) {
+        return element.hasAttribute("data-translate");
+    });
+  
+    // Recorrer todos los elementos y cambiar el texto según el idioma
+    translatableElements.forEach(function(element) {
+        var key = element.getAttribute("data-translate");
+        element.textContent = translations[lang][key];
+    });
+
+    idiomaActual = lang;
+}
+
+function cambiarFondo() {
+    
+    if (fondoActual != "url('../multimedia/img/fondoNether.png')") {
+        document.body.style.backgroundImage = "url('../multimedia/img/fondoNether.png')";
+        fondoActual = "url('../multimedia/img/fondoNether.png')";
+    }
+    else {
+        document.body.style.backgroundImage = "url('../multimedia/img/fondoMinecraft.jpg')";
+        fondoActual = "url('../multimedia/img/fondoMinecraft.jpg')";
+    }
+}
+  
+
+window.onload = function() {
+    // Cargar el texto en inglés por defecto
+    changeLanguage("en");
+    // Variable para saber el fondo actual
+    fondoActual = getComputedStyle(document.body).backgroundImage;
+};
+  
+
+
+$(document).ready(function() {
+    
+});
+
+  
+  
+
+const blocks = document.querySelectorAll('.bloque.objeto');
+
+
+
+
 var translations = {
     es: {
         welcome: "Bienvenido a mi portafolio",
@@ -29,7 +99,8 @@ var translations = {
         webDevelopmentDesc: "Soy un desarrollador web creativo y apasionado por crear sitios web atractivos, responsivos, y fáciles de usar. Me gusta trabajar con diferentes lenguajes de programación y marcos de trabajo para poder adaptarme a las necesidades de cada proyecto. Me encanta el proceso de desarrollo de principio a fin, desde la planificación y el diseño hasta el lanzamiento y el mantenimiento.",
         socialMedia: "Redes Sociales",
         socialMediaDesc: "Soy experto en entender y aprovechar el poder de las redes sociales para promocionar una marca o proyecto. Me gusta crear estrategias efectivas para aumentar la visibilidad y el compromiso en las redes sociales, y en crear contenido atractivo y relevante. Me mantengo actualizado en las últimas tendencias y herramientas para poder crear campañas efectivas y exitosas.",
-        projects: "Proyectos"
+        projects: "Proyectos",
+        softSkills: "Soft Skills"
     },
     en: {
         welcome: "Welcome to my portfolio",
@@ -57,7 +128,8 @@ var translations = {
         webDevelopmentDesc: "I am a creative web developer passionate about creating attractive, responsive, and easy-to-use websites. I like to work with different programming languages and frameworks to be able to adapt to the needs of each project. I love the development process from start to finish, from planning and design to launch and maintenance.",
         socialMedia: "Social Media",
         socialMediaDesc: "I am an expert in understanding and harnessing the power of social media to promote a brand or project. I like to create effective strategies to increase visibility and engagement on social media, and to create attractive and relevant content. I stay up-to-date on the latest trends and tools to be able to create effective and successful campaigns.",
-        projects: "Projects"
+        projects: "Projects",
+        softSkills: "Soft Skills"
     },
     fr: {
         welcome: "Bienvenue sur mon portfolio",
@@ -85,7 +157,8 @@ var translations = {
         webDevelopmentDesc: "Je suis un développeur web créatif passionné par la création de sites web attrayants, réactifs, et faciles à utiliser. J'aime travailler avec différents langages de programmation et frameworks pour pouvoir m'adapter aux besoins de chaque projet. J'adore le processus de développement du début à la fin, de la planification et de la conception au lancement et à la maintenance.", 
         socialMedia: "Réseaux Sociaux", 
         socialMediaDesc: "Je suis un expert en comprenant et en exploitant le pouvoir des réseaux sociaux pour promouvoir une marque ou un projet. J'aime créer des stratégies efficaces pour augmenter la visibilité et l'engagement sur les réseaux sociaux, et créer du contenu attractif et pertinent. Je suis à jour sur les dernières tendances et outils pour pouvoir créer des campagnes efficaces et réussies.",
-        projects: "Projets"
+        projects: "Projets",
+        softSkills: "Compétences"
     },
     zh: {
         welcome: "欢迎来到我的作品集",
@@ -113,71 +186,7 @@ var translations = {
         webDevelopmentDesc: "我是一名创造性的 Web 开发人员，热衷于创建具有吸引力、响应式和易于使用的网站。我喜欢使用不同的编程语言和框架，以便能够适应每个项目的需求。我喜欢从头到尾地参与开发过程，从规划和设计到发布和维护。",
         socialMedia: "社交媒体",
         socialMediaDesc: "我是理解和利用社交媒体推广品牌或项目的专家。我喜欢创建有效的策略，以增加社交媒体上的知名度和参与度，并创建有吸引力和相关的内容。我关注最新趋势和工具，以便能够创建有效和成功的营销活动。",
-        projects: "项目"
+        projects: "项目",
+        softSkills: "软技能"
     }
 };
-  
-// Función para cambiar el idioma
-function changeLanguage(lang, defaultLang) {
-    // Si no se proporciona el idioma, utilizar el idioma por defecto (en este caso, inglés)
-    lang = lang || defaultLang || "en";
-  
-    // Obtener todos los elementos con la etiqueta 'h1', 'a', 'label' y 'button'
-    var elements = document.getElementsByTagName("h1");
-    elements = Array.prototype.slice.call(elements);
-    elements = elements.concat(Array.prototype.slice.call(document.getElementsByTagName("a")));
-    elements = elements.concat(Array.prototype.slice.call(document.getElementsByTagName("label")));
-    elements = elements.concat(Array.prototype.slice.call(document.getElementsByTagName("button")));
-    elements = elements.concat(Array.prototype.slice.call(document.getElementsByTagName("h2")));
-    elements = elements.concat(Array.prototype.slice.call(document.getElementsByTagName("p")));
-    elements = elements.concat(Array.prototype.slice.call(document.getElementsByTagName("h3")));
-  
-    // Filtrar los elementos que tienen el atributo 'data-translate'
-    var translatableElements = elements.filter(function(element) {
-        return element.hasAttribute("data-translate");
-    });
-  
-    // Recorrer todos los elementos y cambiar el texto según el idioma
-    translatableElements.forEach(function(element) {
-        var key = element.getAttribute("data-translate");
-        element.textContent = translations[lang][key];
-    });
-}
-
-function cambiarFondo() {
-    
-    if (fondoActual != "url('../multimedia/img/fondoNether.png')") {
-        document.body.style.backgroundImage = "url('../multimedia/img/fondoNether.png')";
-        fondoActual = "url('../multimedia/img/fondoNether.png')";
-    }
-    else {
-        document.body.style.backgroundImage = "url('../multimedia/img/fondoMinecraft.jpg')";
-        fondoActual = "url('../multimedia/img/fondoMinecraft.jpg')";
-    }
-}
-  
-
-window.onload = function() {
-    // Cargar el texto en inglés por defecto
-    changeLanguage("en");
-    // Variable para saber el fondo actual
-    fondoActual = getComputedStyle(document.body).backgroundImage;
-};
-  
-$(window).scroll(function() {
-    $('.elemento').each(function() {
-        var posicion = $(this).offset().top;
-        var pantalla = $(window).scrollTop() + $(window).height();
-        if (posicion < pantalla) {
-            $(this).addClass('visible');
-        }
-    });
-});
-  
-
-const blocks = document.querySelectorAll('.bloque.objeto');
-
-
-
-
-  

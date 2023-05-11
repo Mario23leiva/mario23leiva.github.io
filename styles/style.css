@@ -29,6 +29,8 @@ header h1 {
     margin: 0;
 }
 
+  
+
 header nav ul {
     display: flex;
     flex-direction: row;
@@ -83,6 +85,21 @@ section#about-me div{
     margin-left: 15px;
 }
 
+.apartado{
+    text-align: center;
+}
+
+.apartado>h2>a{
+    background-color: #333;
+    color: #fff;
+    font-style: bold;
+    width: fit-content;
+    text-align: center;
+    display: inline-block;
+    padding: 1rem;
+    margin: 2rem 0 0 0;
+    border-radius: 1rem;
+}
 
 
 section#projects h2{
@@ -127,6 +144,7 @@ form input[type="submit"]:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-radius: 1rem;
 }
   
 #about-me img {
@@ -227,6 +245,8 @@ footer {
 .footer-left {
     flex: 1;
 }
+
+
   
 .footer-right {
     display: flex;
