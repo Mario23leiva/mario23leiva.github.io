@@ -1,3 +1,6 @@
+// Variable para saber el fondo actual
+var fondoActual = "";
+
 // Objeto con las traducciones
 var translations = {
     es: {
@@ -141,13 +144,15 @@ function changeLanguage(lang, defaultLang) {
     });
 }
 
-function cambiarFondo(picture) {
-    if (picture == "nether") {
+function cambiarFondo() {
+    
+    if (fondoActual != "url('../multimedia/img/fondoNether.png')") {
         document.body.style.backgroundImage = "url('../multimedia/img/fondoNether.png')";
-    } else if (picture == "otra-imagen") {
-        // Aquí puedes establecer otra imagen de fondo
-    } else {
+        fondoActual = "url('../multimedia/img/fondoNether.png')";
+    }
+    else {
         document.body.style.backgroundImage = "url('../multimedia/img/fondoMinecraft.jpg')";
+        fondoActual = "url('../multimedia/img/fondoMinecraft.jpg')";
     }
 }
   
@@ -155,6 +160,8 @@ function cambiarFondo(picture) {
 window.onload = function() {
     // Cargar el texto en inglés por defecto
     changeLanguage("en");
+    // Variable para saber el fondo actual
+    fondoActual = getComputedStyle(document.body).backgroundImage;
 };
   
 $(window).scroll(function() {
@@ -170,17 +177,7 @@ $(window).scroll(function() {
 
 const blocks = document.querySelectorAll('.bloque.objeto');
 
-blocks.forEach(block => {
-  block.addEventListener('mouseover', () => {
-    block.querySelector('.front img').style.opacity = 0;
-    block.querySelector('.back').style.opacity = 1;
-  });
 
-  block.addEventListener('mouseout', () => {
-    block.querySelector('.front img').style.opacity = 1;
-    block.querySelector('.back').style.opacity = 0;
-  });
-});
 
 
   

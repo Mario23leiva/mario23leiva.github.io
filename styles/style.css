@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: #333 1px solid;
 }
 
 body {
@@ -72,6 +73,18 @@ section h2 {
 section p {
     margin-bottom: 1rem;
 }
+
+section#about-me{
+    margin-left: 190px;
+    margin-right: 190px;
+}
+
+section#about-me div{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+
 
 section#projects h2{
     text-align: center;

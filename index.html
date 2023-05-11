@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/javascript.js"></script>
     <title>Portfolio - Multiplatform Application Development</title>
 </head>
@@ -20,7 +21,7 @@
     </header>
     <main>
         <section id="about-me">
-            <img src="multimedia/img/yo.png" alt="jaja soy yo XD" onclick="changeLanguage('zh'); cambiarFondo('nether');">
+            <img src="multimedia/img/yo.png" alt="jaja soy yo XD" onclick="changeLanguage('zh'); cambiarFondo();">
             <div>
                 <h2 data-translate="aboutMe"></h2>
                 <p data-translate="aboutMe1"></p>
@@ -148,9 +149,9 @@
         </div>
         <div class="footer-right">
             <div class="language-buttons">
-                <button id="btn-es" onclick="changeLanguage('es'); cambiarFondo('normal')"><img src="multimedia/img/idiomas/spanish.jpg" alt="Español"></button>
-                <button id="btn-en" onclick="changeLanguage('en'); cambiarFondo('normal')"><img src="multimedia/img/idiomas/englishpitinglish.png" alt="English"></button>
-                <button id="btn-fr" onclick="changeLanguage('fr'); cambiarFondo('normal')"><img src="multimedia/img/idiomas/francia.png" alt="Français"></button>
+                <button id="btn-es" onclick="changeLanguage('es')"><img src="multimedia/img/idiomas/spanish.jpg" alt="Español"></button>
+                <button id="btn-en" onclick="changeLanguage('en')"><img src="multimedia/img/idiomas/englishpitinglish.png" alt="English"></button>
+                <button id="btn-fr" onclick="changeLanguage('fr')"><img src="multimedia/img/idiomas/francia.png" alt="Français"></button>
             </div>
         </div>
     </footer>      
