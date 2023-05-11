@@ -62,7 +62,6 @@ section {
     padding: 2rem;
     margin: 2rem 0;
     background-color: #f2f2f2;
-    border-radius: 0.5rem;
 }
 
 section h2 {
@@ -159,7 +158,7 @@ form input[type="submit"]:hover {
 }
 
 .bloque.objeto {
-    background-color: rgba(255, 255, 255, 0.2); /* Establece un fondo semitransparente */
+    background-color: rgba(255, 255, 255, 0.5); /* Establece un fondo semitransparente */
     padding: 20px; /* Agrega algo de relleno para que el efecto sea más visible */
     margin-bottom: 20px; /* Añade un margen inferior para separar los objetos */
     backdrop-filter: blur(10px); /* Aplica un filtro de desenfoque al fondo detrás del objeto */
@@ -198,6 +197,10 @@ form input[type="submit"]:hover {
 .objeto p {
 	font-size: 16px;
 	line-height: 1.5;
+}
+
+.objeto.elemento{
+    background-color: #fff;
 }
 
 footer {
@@ -254,8 +257,8 @@ footer {
 }
 .bloque.objeto {
     margin: 30px;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     position: relative;
      
 }
@@ -305,7 +308,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 10px 20px 10px;
 }
   
 .bloque.objeto .back h3 {
