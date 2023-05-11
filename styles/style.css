@@ -243,39 +243,48 @@ footer {
     width: 300px;
     height: 300px;
     position: relative;
-  }
+     
+}
   
-  .bloque.objeto:hover .front {
+.bloque.objeto:hover .front {
     opacity: 0;
-  }
+}
   
-  .bloque.objeto:hover .back {
+.bloque.objeto:hover .back {
     opacity: 1;
-  }
+}
   
-  .bloque.objeto .card {
+.bloque.objeto .card {
     width: 100%;
     height: 100%;
     position: absolute;
     left: 0;
     top: 0;
-  }
+    
+}
   
-  .bloque.objeto .front,
-  .bloque.objeto .back {
+.bloque.objeto .front,
+.bloque.objeto .back {
     width: 100%;
     height: 100%;
     position: absolute;
     transition: opacity .5s;
     backface-visibility: hidden;
-  }
+}
+
+
+.bloque.objeto .front{
+    margin: 23%;
+}
+
+
+.bloque.objeto .front img {
+    width: 50%;
+    max-height: 100%;
+    object-fit: contain;
+}
   
-  .bloque.objeto .front img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .bloque.objeto .back {
+.bloque.objeto .back {
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -283,15 +292,15 @@ footer {
     align-items: center;
     text-align: center;
     padding: 20px 0px 20px 0px;
-  }
+}
   
-  .bloque.objeto .back h3 {
+.bloque.objeto .back h3 {
     margin-bottom: 10px;
     font-size: 24px;
     font-weight: bold;
-  }
+}
   
-  .bloque.objeto .back p {
+.bloque.objeto .back p {
     font-size: 16px;
-  }
+}
   
