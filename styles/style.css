@@ -85,6 +85,8 @@ section#about-me div{
     margin-left: 15px;
 }
 
+
+
 .apartado{
     text-align: center;
 }
@@ -99,12 +101,28 @@ section#about-me div{
     padding: 1rem;
     margin: 2rem 0 0 0;
     border-radius: 1rem;
+    text-decoration: none;
 }
 
-
-section#projects h2{
-    text-align: center;
+#projects > div {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 30px;
 }
+  
+
+#projects>div>section{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    height: 100%;
+    border-radius: 1rem;
+}
+
 
 /* Estilos del formulario de contacto */
 form {
@@ -164,7 +182,6 @@ form input[type="submit"]:hover {
 	justify-content: center;
 	align-items: center;
 	gap: 100px;
-	margin-top: 50px;
 }
   
 .objeto {
