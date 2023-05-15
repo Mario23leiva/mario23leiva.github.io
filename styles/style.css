@@ -129,6 +129,23 @@ section#about-me div{
     position: relative;
     height: 80vh;
 }
+
+#formContact>h2{
+    text-align: center;
+}
+
+#formContact>h2>a{
+    background-color: #333;
+    color: #fff;
+    font-style: bold;
+    width: fit-content;
+    text-align: center;
+    display: inline-block;
+    padding: 1rem;
+    margin: 2rem 0 0 0;
+    border-radius: 1rem;
+    text-decoration: none;
+}
   
 #formContact > section {
     position: absolute;
