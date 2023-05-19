@@ -101,6 +101,7 @@ nav #square-image{
 
 
 #projects{
+    justify-content: center;
     text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -109,6 +110,16 @@ nav #square-image{
     padding-top: 30px;
     padding-bottom: 60px;
     text-align: center;
+}
+
+#projects-title {
+    margin-left: 50%;
+}
+
+#projects>#projects-title>h2 {
+    background-color: #252532;
+    color: #fff;
+    width: fit-content;
 }
 
 #cartas{
