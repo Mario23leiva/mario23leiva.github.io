@@ -90,6 +90,7 @@ nav #square-image{
     flex-direction: column;
     color: #fff;
     align-items: center;
+    margin-left: 100px;
 }
   
 .image-container img {
@@ -112,15 +113,8 @@ nav #square-image{
     text-align: center;
 }
 
-#projects-title {
-    margin-left: 50%;
-}
 
-#projects>#projects-title>h2 {
-    background-color: #252532;
-    color: #fff;
-    width: fit-content;
-}
+
 
 #cartas{
     display: flex;
