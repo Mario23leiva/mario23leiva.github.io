@@ -3,7 +3,7 @@
 }
 
 body{
-    padding: 30px 280px;
+    padding: 30px 5%;
     background-color: #252532;
 }
 
@@ -94,7 +94,7 @@ nav #square-image{
 }
   
 .image-container img {
-    max-height: 500px;
+    max-height: 700px;
 }
   
 
