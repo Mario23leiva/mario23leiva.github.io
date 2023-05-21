@@ -1,5 +1,4 @@
 *{
-    
 }
 
 body{
@@ -77,7 +76,117 @@ nav #square-image{
     width: 55px;
 }  
 
+/* ----------------- ESTILOS CONTACT ----------------- */
 
+
+#formContact {
+    position: relative;
+    margin: 10%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+#formContact>h2{
+    text-align: center;
+}
+
+#formContact>h2>a{
+    background-color: #333;
+    color: #fff;
+    font-style: bold;
+    width: fit-content;
+    text-align: center;
+    display: inline-block;
+    padding: 1rem;
+    margin: 2rem 0 0 0;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+  
+#formContact > section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+}
+  
+div#formulario{
+    width: 560px;
+    border-radius: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+}
+
+
+
+form textarea#mensaje{
+    height: 150px;
+    resize: none;
+}
+
+form button {
+    background-color: #68d2df;
+    padding: 20px 10px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    border-radius: 0.4em;
+}
+
+form button:hover {
+    background-color: #3e6c79;
+    color: #000000;
+    transition: 0.3s;
+}
+  
+.formulario {
+    display: inline;
+    width: 50%;
+}
+  
+#imagenes {
+    width: 50%;
+    align-items: center;
+    background: url('../multimedia/img/fondoMinecraft.jpg') no-repeat center center fixed;
+}
+  
+.fila {
+    display: flex;
+}
+  
+.imagen {
+    flex: 1;
+    margin: 10%;
+    text-align: center;
+}
+
+.imagen img{
+    width: 75%;
+    background-color: rgba(107, 107, 107, 0.5);
+    backdrop-filter: blur(10px); /* Aplica un filtro de desenfoque al fondo detrás del objeto */
+    border-radius: 1rem;
+    padding: 5%;
+}
+  
 
 /* ----------------- ESTILOS FOLLOW ME ----------------- */
 

@@ -106,7 +106,46 @@ nav #square-image{
 .image-container img {
     max-height: 700px;
 }
-  
+
+
+/* ----------------- ESTILOS ABOUT ME ----------------- */
+
+.contenedor{
+    display: flex;
+    margin: 10%;
+}
+
+.contenedor img{
+    border: #fff solid 1px;
+    width: 50%;
+    margin-right: 7%;
+    
+}
+
+.contenedor div{
+    text-align: left;
+    width: 30%;
+    color: #fff;
+}
+
+.contenedor button {
+    margin-top: 100%;
+    background-color: #68d2df;
+    padding: 20px 10px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    border-radius: 0.4em;
+}
+
+.contenedor button:hover {
+    background-color: #3e6c79;
+    color: #000000;
+    transition: 0.3s;
+}
+
+
 
 /* ----------------- ESTILOS SKILLS ----------------- */
 
@@ -135,7 +174,7 @@ nav #square-image{
 
 #carta{
     padding: 10px 40px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(217, 217, 217, 0.5);
     backdrop-filter: blur(10px); /* Aplica un filtro de desenfoque al fondo detrás del objeto */
     border-radius: 0.5em;
     border: #fff solid 1px;

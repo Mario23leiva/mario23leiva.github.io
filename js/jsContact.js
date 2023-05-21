@@ -1,19 +1,7 @@
 var fondoActual = "";
-
-document.onload = function() {
-    
-}
-
-function enviarProyecto(carta) {
-    // Obtener el índice de la carta
-    const indice = parseInt(carta.getAttribute('data-indice'));
-  
-    window.location.href = `../pages/descriptionProject.html?info=${indice}`;
-}
-
 function cambiarFondo() {
     const imagen = document.getElementById('square-image');
-    const projects = document.getElementById('projects');
+    const projects = document.getElementById('imagenes');
     if (fondoActual != "url('../multimedia/img/fondoNether.png')") {
         projects.style.backgroundImage = "url('../multimedia/img/fondoNether.png')";
         imagen.src = "../multimedia/img/bloqueNTH.png"

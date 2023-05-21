@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/styleContact.css">
     <link rel="icon" href="multimedia/img/logo.png" type="image/x-icon">
-    <script src="js/jsProjects.js"></script>    
+    <script src="../js/jsContact.js"></script>    
     <title>Mario Leiva</title>
 </head>
 <body>
@@ -17,8 +17,36 @@
             <li><a href="#">Contact</a></li>
         </ul>
         <button id="special-text" onclick="">Hire Me</button>
-        <img id="square-image" src="../multimedia/img/bloqueMC.png">
+        <img id="square-image" src="../multimedia/img/bloqueMC.png" onclick="cambiarFondo()">
     </nav>    
+    <div id="formContact">
+        <div class="formulario">
+            <form action="enviar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+      
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+      
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+      
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div id="imagenes">
+            <div class="fila">
+                <div class="imagen"><img src="../multimedia/img/projectos/checkatt.png"></div>
+                <div class="imagen"><img src="../multimedia/img/projectos/checkatt.png"></div>
+            </div>
+            <div class="fila">
+                <div class="imagen"><img src="../multimedia/img/projectos/checkatt.png"></div>
+                <div class="imagen"><img src="../multimedia/img/projectos/checkatt.png"></div>
+            </div>
+        </div>
+    </div>
+    
+           
     <div id="followMe">
         <h2>Follow Me</h2>
         <div id="socialMedia">
