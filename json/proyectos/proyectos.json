@@ -1,0 +1,27 @@
+[
+    {
+        "titulo": "Proyecto 1",
+        "tipo": "Web",
+        "tecnologias": "HTML, CSS, JavaScript",
+        "descripcion": "Proyecto web para la venta de productos.",
+        "ruta_imagen": "../multimedia/img/projectos/checkatt.png",
+        "url_repo": "https://github.com/proyecto1"
+    },
+    {
+        "titulo": "Proyecto 2",
+        "tipo": "Móvil",
+        "tecnologias": "Android Studio, Kotlin",
+        "descripcion": "Aplicación móvil para la gestión de tareas.",
+        "ruta_imagen": "../multimedia/img/projectos/checkatt.png",
+        "url_repo": "https://github.com/proyecto2"
+    },
+    {
+        "titulo": "Proyecto 3",
+        "tipo": "Desktop",
+        "tecnologias": "Visual Studio, C#",
+        "descripcion": "Aplicación de escritorio para el manejo de inventarios.",
+        "ruta_imagen": "../multimedia/img/projectos/checkatt.png",
+        "url_repo": "https://github.com/proyecto3"
+    }
+]
+  

@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/styleMain.css">
     <link rel="icon" href="multimedia/img/logo.png" type="image/x-icon">
+    <script src="js/jsMain.js"></script>    
     <title>Mario Leiva</title>
 </head>
 <body>
     <nav>
-        <img src="multimedia/img/logo.png">
+        <a href="main.html"><img src="multimedia/img/logo.png"></a>
         <ul>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="pages/projects.html">Projects</a></li>
+            <li><a href="pages/aboutMe.html">About Me</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
         </ul>
         <button id="special-text" onclick="">Hire Me</button>
         <img id="square-image" src="multimedia/img/bloqueMC.png">
@@ -30,26 +31,26 @@
     <div id="projects">
         <h2>Projects</h2>
         <div id="cartas">
-            <div id="carta">
+            <div id="carta" data-indice="0" onclick="enviarProyecto(this)">
                 <img src="multimedia/img/projectos/checkatt.png">
                 <h2>Titulo</h2>
                 <h4>tipo de proyecto</h4>
                 <p>tecnologias utilizadas</p>
             </div>
-            <div id="carta">
+            <div id="carta" data-indice="1" onclick="enviarProyecto(this)">
                 <img src="multimedia/img/projectos/checkatt.png">
                 <h2>Titulo</h2>
                 <h4>tipo de proyecto</h4>
                 <p>tecnologias utilizadas</p>
             </div>
-            <div id="carta">
+            <div id="carta" data-indice="2" onclick="enviarProyecto(this)">
                 <img src="multimedia/img/projectos/checkatt.png">
                 <h2>Titulo</h2>
                 <h4>tipo de proyecto</h4>
                 <p>tecnologias utilizadas</p>
             </div>
         </div>
-        <button id="more-projects">More Projects</button>
+        <button id="more-projects" onclick="window.location.href = 'pages/projects.html'">More Projects</button>
     </div>
     <div id="followMe">
         <h2>Follow Me</h2>

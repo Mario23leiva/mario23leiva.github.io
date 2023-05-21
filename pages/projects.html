@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/styleMain.css">
+    <link rel="icon" href="multimedia/img/logo.png" type="image/x-icon">
+    <script src="../js/jsProjects.js"></script>    
+    <title>Mario Leiva</title>
+</head>
+<body>
+    <nav>
+        <a href="../main.html"><img src="../multimedia/img/logo.png"></a>
+        <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="special-text" onclick="">Hire Me</button>
+        <img id="square-image" src="../multimedia/img/bloqueMC.png">
+    </nav>    
+    <div id="projects">
+        <h2>Projects</h2>
+        <div id="cartas">
+            <div id="carta" data-indice="0" onclick="enviarProyecto(this)">
+                <img src="../multimedia/img/projectos/checkatt.png">
+                <h2>Titulo</h2>
+                <h4>tipo de proyecto</h4>
+                <p>tecnologias utilizadas</p>
+            </div>
+            <div id="carta" data-indice="1" onclick="enviarProyecto(this)">
+                <img src="../multimedia/img/projectos/checkatt.png">
+                <h2>Titulo</h2>
+                <h4>tipo de proyecto</h4>
+                <p>tecnologias utilizadas</p>
+            </div>
+            <div id="carta" data-indice="2" onclick="enviarProyecto(this)">
+                <img src="../multimedia/img/projectos/checkatt.png">
+                <h2>Titulo</h2>
+                <h4>tipo de proyecto</h4>
+                <p>tecnologias utilizadas</p>
+            </div>
+        </div>
+        <div id="cartas">
+            <div id="carta" data-indice="3" onclick="enviarProyecto(this)">
+                <img src="../multimedia/img/projectos/checkatt.png">
+                <h2>Titulo</h2>
+                <h4>tipo de proyecto</h4>
+                <p>tecnologias utilizadas</p>
+            </div>
+            <div id="carta" data-indice="4" onclick="enviarProyecto(this)">
+                <img src="../multimedia/img/projectos/checkatt.png">
+                <h2>Titulo</h2>
+                <h4>tipo de proyecto</h4>
+                <p>tecnologias utilizadas</p>
+            </div>
+            <div id="carta" data-indice="5" onclick="enviarProyecto(this)">
+                <img src="../multimedia/img/projectos/checkatt.png">
+                <h2>Titulo</h2>
+                <h4>tipo de proyecto</h4>
+                <p>tecnologias utilizadas</p>
+            </div>
+        </div>
+    </div>
+    <div id="followMe">
+        <h2>Follow Me</h2>
+        <div id="socialMedia">
+            <a href="https://www.linkedin.com/in/mario-leiva-torres-907b68226/"><img src="../multimedia/img/social-media/linkedin.jpg" alt=""></a>
+            <a href="https://github.com/Mario23leiva"><img src="../multimedia/img/social-media/github.png" alt=""></a>
+            <a href="https://twitter.com/mario__leiva"><img src="../multimedia/img/social-media/Twitter-logo.png" alt=""></a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-left">
+            <p>&copy; 2023 Mario Leiva</p>
+        </div>
+        <div class="footer-right">
+            <div class="language-buttons">
+                <button id="btn-es" onclick="changeLanguage('es')"><img src="../multimedia/img/idiomas/spanish.jpg" alt="Español"></button>
+                <button id="btn-en" onclick="changeLanguage('en')"><img src="../multimedia/img/idiomas/englishpitinglish.png" alt="English"></button>
+                <button id="btn-fr" onclick="changeLanguage('fr')"><img src="../multimedia/img/idiomas/francia.png" alt="Français"></button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
