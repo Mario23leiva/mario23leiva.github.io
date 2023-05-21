@@ -75,12 +75,43 @@ nav a:hover {
 
 nav #square-image{
     width: 55px;
-}  
+}
 
-/* ----------------- ESTILOS PROJECTS ----------------- */
+/* ----------------- ESTILOS MAIN ----------------- */
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+  }
+  
+.text-container {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: left;
+    margin-left: 100px;
+}
+
+.text-container>h2{
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.text-container>h3{
+    margin-top: 5px;
+}
+  
+.image-container img {
+    max-height: 700px;
+}
+  
+
+/* ----------------- ESTILOS SKILLS ----------------- */
 
 
-#projects{
+#skills{
     justify-content: center;
     text-align: center;
     margin-top: 100px;
@@ -99,15 +130,16 @@ nav #square-image{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 60px;
+    margin: 60px 0;
 }
 
 #carta{
     padding: 10px 40px;
-    background-color: #252532;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px); /* Aplica un filtro de desenfoque al fondo detrás del objeto */
     border-radius: 0.5em;
     border: #fff solid 1px;
-    color: #fff;
+    color: #000000;
     width: 200px;
     margin: 0 50px; 
 }

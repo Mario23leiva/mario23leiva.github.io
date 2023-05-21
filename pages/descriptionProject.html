@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../styles/styleMain.css">
+    <link rel="stylesheet" type="text/css" href="../styles/styleDescriptionProjects.css">
     <link rel="icon" href="multimedia/img/logo.png" type="image/x-icon">
-    <script src="js/jsProjects.js"></script>    
+    <script src="../js/jsDescriptionProject.js"></script>    
     <title>Mario Leiva</title>
 </head>
 <body>
@@ -13,12 +13,27 @@
         <a href="../main.html"><img src="../multimedia/img/logo.png"></a>
         <ul>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         <button id="special-text" onclick="">Hire Me</button>
         <img id="square-image" src="../multimedia/img/bloqueMC.png">
-    </nav>    
+    </nav>  
+    <div id="infoProyecto">
+        <h2 id="tituloProyecto"></h2>
+        <h5 id="tipoProyecto"></h5>
+        <div class="contenedor">
+            <img src="" alt="" id="imagenProyecto">
+            <div>
+                <h4>Descripcion</h4>
+                <p id="descripcionProyecto"></p>
+            </div>
+        </div>
+        <h3 id="tecnologias">Tools & Technologies</h3>
+        <h5 id="tecnologiasProyecto"></h5>
+        <h3 id="Moreinfo">More info</h3>
+        <button id="btn-moreInfo" onclick="">Take a look the code</button>
+    </div>  
     <div id="followMe">
         <h2>Follow Me</h2>
         <div id="socialMedia">
