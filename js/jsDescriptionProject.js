@@ -18,8 +18,19 @@ function cargarProyecto(carta) {
       tituloProyecto.innerHTML = elemento.titulo;
       const tipoProyecto = document.getElementById('tipoProyecto');
       tipoProyecto.innerHTML = elemento.tipo;
-      const imagenProyecto = document.getElementById('imagenProyecto');
-      imagenProyecto.src = elemento.ruta_imagen;
+      
+      // Obtener el array de imágenes para el carrusel
+      const imagenes = elemento.imagenes;
+
+      // Crear los elementos img para cada imagen en el carrusel
+      const carouselImages = document.querySelector('.carousel-images');
+      for (let i = 0; i < imagenes.length; i++) {
+        const imagen = document.createElement('img');
+        imagen.src = imagenes[i];
+        carouselImages.appendChild(imagen);
+      }
+
+
       const descripcionProyecto = document.getElementById('descripcionProyecto');
       descripcionProyecto.innerHTML = elemento.descripcion;
       const tecnologiasProyecto = document.getElementById('tecnologiasProyecto');
