@@ -162,8 +162,30 @@ nav #square-image{
     text-align: center;
 }
 
+div>.texto{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
+div>.texto>h2{
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #252532;
+    padding: 2%;
+    border-radius: 10px;
+}
 
+div>.texto>h3{
+    color: #fff;
+    font-weight: bold;
+    background-color: #53535a;
+    padding: 1%;
+    border-radius: 10px;
+}
 
 #cartas{
     display: flex;
@@ -185,14 +207,6 @@ nav #square-image{
 
 #carta img{
     width: 150px;
-}
-
-#carta h4{
-    margin-bottom: 5px;
-}
-
-#carta p{
-    margin-top: 5px;
 }
 
 #more-projects{

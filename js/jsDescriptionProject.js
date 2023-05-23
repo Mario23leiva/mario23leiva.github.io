@@ -37,7 +37,7 @@ function cargarProyecto(carta) {
       tecnologiasProyecto.innerHTML = elemento.tecnologias;
       const moreInfoProyecto = document.getElementById('btn-moreInfo');
       moreInfoProyecto.addEventListener('click', () => {
-        window.location.href = elemento.url_repo;
+        window.open(elemento.url_repo, '_blank');
       });
     });
 }
