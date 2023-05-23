@@ -13,9 +13,9 @@
     },
     {
         "titulo": "Proyecto 2",
-        "tipo": "Móvil",
-        "tecnologias": "Android Studio, Kotlin",
-        "descripcion": "Aplicación móvil para la gestión de tareas.",
+        "tipo": "Desktop",
+        "tecnologias": "Python",
+        "descripcion": "Este es el típico juego que caen bloques y tienes que esquivarlo.",
         "imagenes": [
             "../multimedia/img/projectos/checkatt.png",
             "../multimedia/img/projectos/checkatt.png",
