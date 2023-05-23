@@ -6,8 +6,8 @@
         "descripcion": "Esto es una aplicación para escuelas, CheckATT contiene 3 aplicaciones, 1 de escritorio y otras 2 para dispositivos móviles. La aplicación de escritorio sirve para añadir alumnos, profesores, clases... a la base de datos. Una de las aplicaciones movil, sirve para que el profesor de la clase pueda pasar lista de los alumnos en la clase, y la otra aplicación móvil la pueden utilizar tanto los profesores como los alumnos de manera individual, los alumnos desde la aplicación, pueden ver su porcentaje de asistencia de cada asignatura además de poder justificar sus absencias, y el profesor desde la aplicación móvil, puede ver el porcentaje de asistencia de los alumnos de su clase, también podrá validar o rechazar los justificantes de los alumnos",
         "imagenes": [
             "../multimedia/img/projectos/checkatt.png",
-            "../multimedia/img/projectos/checkatt.png",
-            "../multimedia/img/projectos/checkatt.png"
+            "../multimedia/img/skills/hard/tools/android.png",
+            "../multimedia/img/skills/hard/tools/jira.png"
         ],
         "url_repo": "https://github.com/proyecto1"
     },
