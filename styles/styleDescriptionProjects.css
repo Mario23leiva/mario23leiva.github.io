@@ -80,6 +80,7 @@ nav #square-image{
 /* ----------------- ESTILOS INFO PROJECTS ----------------- */
 
 #infoProyecto{
+    border: #fff solid 1px;
     margin-top: 5%;
     color: #fff;
     text-align: center;
