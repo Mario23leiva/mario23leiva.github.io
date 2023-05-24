@@ -113,30 +113,37 @@ nav #square-image{
 .contenedor{
     display: flex;
     margin: 10%;
+    border: #fff solid 1px;
 }
 
 .contenedor img{
     border: #fff solid 1px;
-    width: 50%;
+    width: 30%;
+    height: 30%;
     margin-right: 7%;
     
 }
 
 .contenedor div{
+    border: #fff solid 1px;
     text-align: left;
-    width: 30%;
     color: #fff;
 }
 
+.contenedor div p{
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+
 .contenedor button {
-    margin-top: 100%;
     background-color: #68d2df;
-    padding: 20px 10px;
+    padding: 15px 5px;
     color: #000000;
     font-size: 18px;
     font-weight: bold;
     text-align: right;
     border-radius: 0.4em;
+    border: #fff solid 1px;
 }
 
 .contenedor button:hover {
