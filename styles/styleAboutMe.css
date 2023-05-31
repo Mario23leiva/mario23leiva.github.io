@@ -113,7 +113,6 @@ nav #square-image{
 .contenedor{
     display: flex;
     margin: 10%;
-    border: #fff solid 1px;
 }
 
 .contenedor img{
@@ -125,7 +124,6 @@ nav #square-image{
 }
 
 .contenedor div{
-    border: #fff solid 1px;
     text-align: left;
     color: #fff;
 }

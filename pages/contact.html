@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/styleContact.css">
     <link rel="icon" href="../multimedia/img/logo2.png" type="image/x-icon">
-    <script src="../js/jsContact.js"></script>    
+    <script src="../js/jsContact.js"></script>   
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("-lbuieX_ZBJnNFyxt");
+    })();
+    </script>
     <title>Mario Leiva</title>
 </head>
 <body>
@@ -21,7 +29,7 @@
     </nav>    
     <div id="formContact">
         <div class="formulario">
-            <form action="enviar.php" method="post">
+            <form onsubmit="enviarFormulario()">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
       
