@@ -180,7 +180,7 @@ div>.texto>h2{
     font-weight: bold;
     font-size: 30px;
     background-color: #252532;
-    padding: 2%;
+    padding: 10px 20px;
     border-radius: 10px;
 }
 
@@ -188,7 +188,8 @@ div>.texto>h3{
     color: #fff;
     font-weight: bold;
     background-color: #53535a;
-    padding: 1%;
+    padding: 10px 20px;
+    font-size: 20px;
     border-radius: 10px;
 }
 
