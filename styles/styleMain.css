@@ -99,6 +99,7 @@ nav #square-image{
 }
 
 @media (max-width: 858px) {
+/*-------------------------menu-responsive--------------------------------*/
     .checkbtn {
         display: block;
     }
@@ -133,7 +134,6 @@ nav #square-image{
 }
 
 
-
 /* ----------------- ESTILOS MAIN ----------------- */
 
 #main {
@@ -147,7 +147,6 @@ nav #square-image{
     display: flex;
     flex-direction: column;
     color: #fff;
-    align-items: left;
     margin-left: 100px;
 }
 
@@ -163,6 +162,35 @@ nav #square-image{
 .image-container img {
     max-height: 700px;
 
+}
+
+@media (max-width: 858px) {
+/*-------------------------main-responsive--------------------------------*/
+    #main {
+        display: block;
+        text-align: center  ;
+    }
+    
+    .text-container {
+        display: block;
+        flex-direction: column;
+        color: #fff;
+        margin-left: 0px;
+    }
+
+    .text-container>h2{
+        margin-bottom: 5px;
+        font-size: 30px;
+    }
+
+    .text-container>h3{
+        margin-top: 5px;
+    }
+    
+    .image-container img {
+        max-height: 50vw;
+
+    }
 }
   
 
