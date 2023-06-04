@@ -8,6 +8,7 @@ window.onload = function() {
       if (check.checked) {
         body.style.overflow = 'hidden'; // desactivar el scroll
       } else {
+        check.checked = false; // desmarcar el checkbox
         body.style.overflow = 'auto'; // activar el scroll
       }
     });
