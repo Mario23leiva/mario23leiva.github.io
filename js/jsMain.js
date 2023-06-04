@@ -1,8 +1,25 @@
 var fondoActual = "";
 
-document.onload = function() {
-    
-}
+window.onload = function() {
+    const check = document.getElementById('check');
+    const body = document.getElementsByTagName('body')[0];
+  
+    check.addEventListener('click', () => {
+      if (check.checked) {
+        body.style.overflow = 'hidden'; // desactivar el scroll
+      } else {
+        body.style.overflow = 'auto'; // activar el scroll
+      }
+    });
+  
+    document.addEventListener('click', (event) => {
+      if (!check.contains(event.target)) {
+        check.checked = false; // desmarcar el checkbox
+        body.style.overflow = 'auto'; // activar el scroll
+      }
+    });
+  }
+  
 
 function enviarProyecto(carta) {
     // Obtener el índice de la carta
@@ -25,3 +42,5 @@ function cambiarFondo() {
         fondoActual = "url('../multimedia/img/fondoMinecraft.jpg')";
     }
 }
+
+

@@ -1,5 +1,5 @@
 *{
-    border: #fff solid 1px;
+    /*border: #fff solid 1px;*/
 }
 
 body{
@@ -100,24 +100,25 @@ nav #square-image{
 
 @media (max-width: 858px) {
 /*-------------------------menu-responsive--------------------------------*/
+
     .checkbtn {
         display: block;
     }
     ul {
         position: fixed;
-        width: 50%;
-        height: 100%;
+        width: 100%;
+        height: fit-content;
         background: #2c3e50;
-        top: 109px;
+        top: 120px;
         left: -100%;
         text-align: center;
         transition: all .5s;
     }
     nav ul{
-        display: block;
+        display: flex;
     }
     nav ul li{
-        margin: 50px 0;
+        margin: 20px 0;
         line-height: 30px;
     }
     nav ul li a {
