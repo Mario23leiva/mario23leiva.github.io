@@ -13,12 +13,7 @@ window.onload = function() {
       }
     });
   
-    document.addEventListener('click', (event) => {
-      if (!check.contains(event.target)) {
-        check.checked = false; // desmarcar el checkbox
-        body.style.overflow = 'auto'; // activar el scroll
-      }
-    });
+    
   }
   
 

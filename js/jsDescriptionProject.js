@@ -19,11 +19,15 @@ function cargarProyecto(carta) {
       const tipoProyecto = document.getElementById('tipoProyecto');
       tipoProyecto.innerHTML = elemento.tipo;
       
+      const imagenProyecto = document.getElementById('imagenPrincipal');
+      imagenProyecto.src = elemento.imagenPrincipal; // Establecer la ruta de la imagen del proyecto
+      
+
       // Obtener el array de imágenes para el carrusel
       const imagenes = elemento.imagenes;
 
       // Crear los elementos img para cada imagen en el carrusel
-      const carouselImages = document.querySelector('.carousel-images');
+      const carouselImages = document.querySelector('.images');
       for (let i = 0; i < imagenes.length; i++) {
         const imagen = document.createElement('img');
         imagen.src = imagenes[i];

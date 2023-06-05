@@ -80,7 +80,6 @@ nav #square-image{
 /* ----------------- ESTILOS INFO PROJECTS ----------------- */
 
 #infoProyecto{
-    border: #fff solid 1px;
     margin-top: 5%;
     color: #fff;
     text-align: center;
@@ -100,62 +99,43 @@ nav #square-image{
     font-size: 25px;
 }
 
-.contenedor{
-    margin-top: 5%;
+#infoProyecto #imagenPrincipal{
+    max-width: 500px;
+}
+
+div#descripcion{
+    text-align: center;
+}
+
+div #descripcionProyecto{
+    padding: 0 300px;
+    text-justify: auto;
+}
+
+.imagenes_proyecto {
+    display: flex;
     justify-content: center;
-    display: flex;
-}
-
-/* ----------------- ESTILOS CARRUSEL ----------------- */
-
-.carousel-container {
-    width: 600px;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
+    align-items: center;
+    height: 100%;
   }
   
-  .carousel-images {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    
+  .imagenes_proyecto .images {
+    display: flex; /* Añadir display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    height: 100%; 
   }
   
-  .carousel-images img {
-    width: 600px;
-    height: 400px;
-    margin-right: 20px;
-    animation: carousel-animation 15s infinite;
-
+  .imagenes_proyecto .images img{
+    max-width: 600px;
+    max-height: 100%;
+    object-fit: contain;
+    margin: 0 100px;
   }
   
-  @keyframes carousel-animation {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(-100%); }
-    40% { transform: translateX(-200%); }
-    /* Agrega más pasos según el número de imágenes */
-  }
   
 
-/* ---------------------------------------------------- */
-
-.contenedor>div{
-    margin-right: 2.5%;
-    width: 25%;
-    
-}
-
-.contenedor>div>h4{
-    font-size: 20px;
-}
-
-.contenedor>div>p{
-    font-size: 17px;
-    text-align: justify;
-}
 
 #infoProyecto>button {
     background-color: #68d2df;
