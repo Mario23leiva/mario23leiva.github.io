@@ -42,7 +42,6 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
-    margin-left: 25px;
     margin-right: 5px;
 }
 
@@ -90,9 +89,6 @@ nav #square-image{
 }
 
 @media (max-width: 952px){
-    .enlace{
-        padding-left: 20px;
-    }
     nav ul li a{
         font-size: 16px;
     }
@@ -159,10 +155,15 @@ nav #square-image{
 .text-container>h3{
     margin-top: 5px;
 }
+
+.image-container{
+    max-width: 70%;
+    height: auto;
+}
   
 .image-container img {
-    max-height: 700px;
-
+    max-width: 100%;
+    height: auto;
 }
 
 @media (max-width: 858px) {
