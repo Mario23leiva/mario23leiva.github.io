@@ -1,0 +1,67 @@
+.blocked-screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocked-screen-background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/fondos/pantalla.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.blocked-screen-login {
+    animation: fadeIn 0.5s ease forwards;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blocked-screen-login img {
+    width: 200px;
+}
+
+.blocked-screen-login h1 {
+    margin-top: auto;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.blocked-screen-login h1 #spinner {
+    animation: rotate 1s ease-in-out infinite;    
+}

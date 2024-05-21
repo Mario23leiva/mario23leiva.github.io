@@ -1,70 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/styleMain.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="icon" href="../multimedia/img/logo2.png" type="image/x-icon">
-    <script src="js/jsMain.js"></script>    
-    <title>Mario Leiva</title>
-</head>
-<body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <a href="index.html" class="enlace"><img src="multimedia/img/logo1.png"></a>
-        <ul>
-            <li><a href="pages/projects.html">Projects</a></li>
-            <li><a href="pages/aboutMe.html">About Me</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
-        </ul>
-        <img id="square-image" src="multimedia/img/bloqueMC.png" onclick="cambiarFondo()">
-    </nav>
-    <div id="main">
-        <div class="text-container">
-            <h2>Hi I'm Mario</h2>
-            <h3>A Software Developer</h3>
-        </div>
-        <div class="image-container">
-            <img src="multimedia/img/softwareDeveloper.jpg" alt="Imagen de Mario">
-        </div>
-    </div>      
-    <div id="projects">
-        <div class="texto">
-            <h2>Projects</h2>
-        </div>
-        <div id="cartas">
-            <div id="carta" data-indice="0" onclick="enviarProyecto(this)">
-                <img src="multimedia/img/projectos/checkatt.png">
-                <h2>CheckATT</h2>
-                <h4>Desktop + Movile App</h4>
-                <p>Android Studio, Kotlin, .NET, C#, SQL Server</p>
-            </div>
-        </div>
-        <button id="more-projects" onclick="window.location.href = 'pages/projects.html'">More Projects</button>
-    </div>
-    <div id="followMe">
-        <h2>Follow Me</h2>
-        <div id="socialMedia">
-            <a href="https://www.linkedin.com/in/mario-leiva-torres-907b68226/" target="_blank"><img src="multimedia/img/social-media/linkedin.jpg" alt=""></a>
-            <a href="https://github.com/Mario23leiva" target="_blank"><img src="multimedia/img/social-media/github.png" alt=""></a>
-            <a href="https://twitter.com/mario__leiva" target="_blank"><img src="multimedia/img/social-media/Twitter-logo.png" alt=""></a>
-        </div>
-    </div>
-    <footer>
-        <div class="footer-left">
-            <p>&copy; 2023 Mario Leiva</p>
-        </div>
-        <div class="footer-right">
-            <div class="language-buttons">
-                <button id="btn-es" onclick="changeLanguage('es')"><img src="multimedia/img/idiomas/spanish.jpg" alt="Español"></button>
-                <button id="btn-en" onclick="changeLanguage('en')"><img src="multimedia/img/idiomas/englishpitinglish.png" alt="English"></button>
-                <button id="btn-fr" onclick="changeLanguage('fr')"><img src="multimedia/img/idiomas/francia.png" alt="Français"></button>
-            </div>
-        </div>
-    </footer>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

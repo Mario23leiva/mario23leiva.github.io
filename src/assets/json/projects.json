@@ -1,0 +1,39 @@
+[
+    {
+        "id": 0,
+        "titulo": "Proyecto 1",
+        "descripcion": "Este es mi primer proyecto personal. Lo hice para practicar mis habilidades de desarrollo web.",
+        "tecnologias": [
+            "CSS",
+            "HTML",
+            "LARAVEL",
+            "REACT",
+            "SQL",
+            "VUE",
+            "JAVASCRIPT"
+        ],
+        "url_repositorio": "https://github.com/tu_usuario/proyecto1"
+    },
+    {
+        "id": 1,
+        "titulo": "Proyecto 2",
+        "descripcion": "Este es mi segundo proyecto personal. Es una aplicación de lista de tareas.",
+        "tecnologias": [
+            "React",
+            "Node.js",
+            "MongoDB"
+        ],
+        "url_repositorio": "https://github.com/tu_usuario/proyecto2"
+    },
+    {
+        "id": 2,
+        "titulo": "Proyecto 3",
+        "descripcion": "Este es mi tercer proyecto personal. Es un blog personal donde comparto mis ideas sobre tecnología.",
+        "tecnologias": [
+            "WordPress",
+            "PHP",
+            "MySQL"
+        ],
+        "url_repositorio": "https://github.com/tu_usuario/proyecto3"
+    }
+]

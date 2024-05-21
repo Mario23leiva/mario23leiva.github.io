@@ -1,0 +1,154 @@
+.pokeball-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+
+.pokeball {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    animation: pokeball-rotate 1.2s ease infinite;
+    position: absolute;
+    height: 100%;
+}
+
+.pokeball-active {
+    animation: none;
+    animation: open-pokeball-menu 1.5s;
+}
+
+.pokeball-hover:hover {
+    animation: none;
+    width: 100px;
+    transform: rotate(65deg);
+}
+
+.pokeball-hover .pokeball-img {
+    cursor: pointer;
+}
+
+.pokeball-img{
+    width: 45px;
+    height: 90px;
+}
+
+.pokeball-hover .pokeball-apps-container {
+    display: none;
+}
+
+.pokeball-active .pokeball-apps-container .desktop-app{
+    animation: display-apps-pokeball-menu 2s;
+}
+
+.pokeball-apps-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(2px);
+}
+
+.desktop-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+}
+
+.desktop-app:hover{
+    transform: scale(1.1);
+}
+
+.desktop-app img{
+    width: 50px;
+    height: 50px;
+}
+
+.desktop-app.minimized{
+    background-color: red;
+}
+
+
+@keyframes pokeball-rotate {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    15% {
+        transform: rotate(45deg);
+    }
+
+    35% {
+        transform: rotate(135deg);
+    }
+
+    40% {
+        transform: rotate(90deg);
+    }
+
+    45% {
+        transform: rotate(65deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+
+@keyframes open-pokeball-menu {
+
+    0% {
+        transform: rotate(65deg);
+    }
+
+    20% {
+        transform: rotate(0deg);
+        width: 0px;
+    }
+
+    100% {
+        width: 600px;
+    }
+
+}
+
+@keyframes display-apps-pokeball-menu{
+
+    0% {
+        display: none;
+    }
+
+    50%{
+        display: none;
+        transform: scale(0);
+    }
+
+    80%{
+        transform: scale(1.2);
+    }
+
+    100% {
+        display: flex;
+        transform: scale(1);
+    }
+
+}
