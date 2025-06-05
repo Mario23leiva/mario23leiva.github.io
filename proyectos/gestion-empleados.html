@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Empleados | Mario Leiva</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .project-detail {
+            padding: 7rem 0 4rem;
+        }
+
+        .project-header {
+            margin-bottom: 3rem;
+        }
+
+        .project-meta {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #e74c3c;
+            margin-bottom: 2rem;
+        }
+
+        .project-section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .workflow-diagram {
+            max-width: 100%;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin: 2rem 0;
+        }
+
+        .tech-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .tech-badge {
+            background: #e2e8f0;
+            color: #1e293b;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border-left: 3px solid #e74c3c;
+        }
+
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        .table-diagram {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .table-diagram th {
+            background: #e74c3c;
+            color: white;
+            text-align: left;
+            padding: 1rem;
+        }
+
+        .table-diagram td {
+            padding: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .table-diagram tr:last-child td {
+            border-bottom: none;
+        }
+
+        .screens-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .screen-card {
+            position: relative;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            width: 100%;
+        }
+
+        .screen-card img{
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .feature-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .screens-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">ML</a>
+            <ul>
+                <li><a href="../index.html#projects">Proyectos</a></li>
+                <li><a href="../index.html#about">Sobre Mí</a></li>
+                <li><a href="../index.html#experience">Experiencia</a></li>
+                <li><a href="../index.html#contact">Contacto</a></li>
+            </ul>
+            <!-- <div class="language-switcher">
+                <button data-lang="es" class="active">ES</button>
+                <button data-lang="en">EN</button>
+            </div> -->
+            <button class="menu-hamburguesa">☰</button>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <div class="container">
+            <a href="../index.html#projects" class="back-link">← Volver a proyectos</a>
+
+            <div class="project-header">
+                <h1>Sistema de Gestión de Empleados para Compañías Aéreas</h1>
+                <p>Solución ABAP con Dynpro y TabScrip para gestión de empleados en el sector aeronáutico</p>
+            </div>
+
+            <div class="project-meta">
+                <div class="meta-grid">
+                    <div>
+                        <strong>Cliente:</strong> Curso ABAP Nivel 2
+                    </div>
+                    <div>
+                        <strong>Fecha:</strong> Abril 2025
+                    </div>
+                    <div>
+                        <strong>Módulos:</strong> HR, Flights (SCARR)
+                    </div>
+                    <div>
+                        <strong>Rol:</strong> Desarrollador ABAP Full Stack
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Desafío del Proyecto</h2>
+                <p>Se necesitaba un sistema integrado para gestionar empleados de diferentes compañías aéreas, con
+                    capacidad para crear, modificar y eliminar registros. El sistema debía integrarse con la tabla
+                    estándar SCARR de SAP para mantener la consistencia de datos y proporcionar una interfaz de usuario
+                    intuitiva mediante Dynpro y TabScrip.</p>
+
+                <div class="tech-badges">
+                    <span class="tech-badge">ABAP</span>
+                    <span class="tech-badge">Dynpro</span>
+                    <span class="tech-badge">TabScrip</span>
+                    <span class="tech-badge">SAP HR</span>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Arquitectura de la Solución</h2>
+                <p>Implementé un sistema basado en una tabla personalizada para almacenar datos de empleados, con
+                    integración a la tabla estándar SCARR para datos de compañías aéreas:</p>
+
+                <div class="workflow-diagram">
+
+                    <h3>Tabla Personalizada ZEMPLEADOS_XX</h3>
+                    <table class="table-diagram">
+                        <thead>
+                            <tr>
+                                <th>Campo</th>
+                                <th>Tipo</th>
+                                <th>Descripción</th>
+                                <th>Obligatorio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CARRID</td>
+                                <td>CHAR(3)</td>
+                                <td>Código compañía aérea (FK a SCARR)</td>
+                                <td>Sí</td>
+                            </tr>
+                            <tr>
+                                <td>EMP_NUM</td>
+                                <td>CHAR(8)</td>
+                                <td>Número de empleado</td>
+                                <td>Sí</td>
+                            </tr>
+                            <tr>
+                                <td>NOMBRE</td>
+                                <td>CHAR(25)</td>
+                                <td>Nombre del empleado</td>
+                                <td>Sí</td>
+                            </tr>
+                            <tr>
+                                <td>APELLIDO</td>
+                                <td>CHAR(25)</td>
+                                <td>Apellido del empleado</td>
+                                <td>Sí</td>
+                            </tr>
+                            <tr>
+                                <td>PUESTO</td>
+                                <td>CHAR(20)</td>
+                                <td>Puesto de trabajo</td>
+                                <td>Sí</td>
+                            </tr>
+                            <tr>
+                                <td>FECHA_INGRESO</td>
+                                <td>DATS</td>
+                                <td>Fecha de ingreso</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>EMAIL</td>
+                                <td>CHAR(40)</td>
+                                <td>Correo electrónico</td>
+                                <td>No</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Funcionalidades Implementadas</h2>
+
+                <div class="feature-list">
+                    <div class="feature-card">
+                        <h4>Pantalla de Búsqueda</h4>
+                        <ul>
+                            <li>Campos obligatorios: CARRID y EMP_NUM</li>
+                            <li>Ayuda de búsqueda para EMP_NUM</li>
+                            <li>Validación de existencia de registros</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>Gestión de Empleados</h4>
+                        <ul>
+                            <li>Creación de nuevos empleados</li>
+                            <li>Modificación de datos existentes</li>
+                            <li>Eliminación de registros</li>
+                            <li>Visualización detallada</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>Interfaz TabScrip</h4>
+                        <ul>
+                            <li>Pestaña "Datos de Empleado"</li>
+                            <li>Pestaña "Compañía Aérea"</li>
+                            <li>Botones contextuales para acciones</li>
+                            <li>Cambio dinámico de modo edición</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>Validaciones y Mensajes</h4>
+                        <ul>
+                            <li>Mensaje modal para creación de empleados</li>
+                            <li>Confirmación para eliminación</li>
+                            <li>Mensajes de éxito/error en operaciones</li>
+                            <li>Validación de formato de email</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-section">
+                <h2>Pantallas del Sistema</h2>
+                <div class="screens-container">
+                    <div class="screen-card">
+                        <h3>Pantalla de Selección</h3>
+                        <p>Interfaz inicial con campos obligatorios y botón de ejecución.</p>
+                        <img src="../assets/p2/Captura 1.png" alt="Pantalla de selección">
+                    </div>
+
+                    <div class="screen-card">
+                        <h3>Vista de Empleado</h3>
+                        <p>Visualización de datos de empleado con opciones de modificación.</p>
+                        <img src="../assets/p2/Captura 3.png" alt="Vista de empleado">
+                    </div>
+
+                    <div class="screen-card">
+                        <h3>Modal de Confirmación</h3>
+                        <p>Popup para creación de nuevos empleados cuando no existen.</p>
+                        <img src="../assets/p2/Captura 2.png" alt="Modal de confirmación">
+                    </div>
+
+                    <div class="screen-card">
+                        <h3>Pestaña Compañía Aérea</h3>
+                        <p>Información de la compañía aérea desde la tabla SCARR.</p>
+                        <img src="../assets/p2/Captura 4.png" alt="Pestaña compañía">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Tecnologías Utilizadas</h2>
+                <div class="tech-badges">
+                    <span class="tech-badge">ABAP</span>
+                    <span class="tech-badge">Dynpro</span>
+                    <span class="tech-badge">TabScrip</span>
+                    <span class="tech-badge">SAP GUI</span>
+                    <span class="tech-badge">Data Dictionary</span>
+                    <span class="tech-badge">SCARR Table</span>
+                    <span class="tech-badge">POPUP_TO_CONFIRM</span>
+                    <span class="tech-badge">F4 Help</span>
+                    <span class="tech-badge">SM30</span>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Resultados y Aprendizajes</h2>
+                <div class="feature-list">
+                    <div class="feature-card">
+                        <h4>Logros Técnicos</h4>
+                        <ul>
+                            <li>Implementación completa de sistema CRUD en SAP</li>
+                            <li>Integración efectiva con tablas estándar (SCARR)</li>
+                            <li>Interfaz de usuario intuitiva con TabScrip</li>
+                            <li>Validaciones robustas y manejo de errores</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>Habilidades Desarrolladas</h4>
+                        <ul>
+                            <li>Programación avanzada de Dynpro</li>
+                            <li>Gestión de controles TabScrip</li>
+                            <li>Implementación de F4 Help personalizada</li>
+                            <li>Manejo de popups y diálogos modales</li>
+                            <li>Diseño de flujos de usuario complejos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

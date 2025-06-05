@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Gestor de Pedidos de Ventas | Mario Leiva</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .project-detail {
+            padding: 7rem 0 4rem;
+        }
+
+        .project-header {
+            margin-bottom: 3rem;
+        }
+
+        .project-meta {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 2rem;
+        }
+
+        .project-section {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .architecture-diagram {
+            max-width: 100%;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin: 2rem 0;
+        }
+
+        .tech-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .tech-badge {
+            background: #e2e8f0;
+            color: #1e293b;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border-left: 3px solid #3498db;
+        }
+
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        .table-diagram {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .table-diagram th {
+            background: #3498db;
+            color: white;
+            text-align: left;
+            padding: 1rem;
+        }
+
+        .table-diagram td {
+            padding: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .table-diagram tr:last-child td {
+            border-bottom: none;
+        }
+
+        .project-gallery-item {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .project-gallery-item img {
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .feature-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">ML</a>
+            <ul>
+                <li><a href="../index.html#projects">Proyectos</a></li>
+                <li><a href="../index.html#about">Sobre Mí</a></li>
+                <li><a href="../index.html#experience">Experiencia</a></li>
+                <li><a href="../index.html#contact">Contacto</a></li>
+            </ul>
+            <!-- <div class="language-switcher">
+                <button data-lang="es" class="active">ES</button>
+                <button data-lang="en">EN</button>
+            </div> -->
+            <button class="menu-hamburguesa">☰</button>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <div class="container">
+            <a href="../index.html#projects" class="back-link">← Volver a proyectos</a>
+
+            <div class="project-header">
+                <h1>Sistema Gestor de Pedidos de Ventas (SGPV)</h1>
+                <p>Solución ABAP personalizada para gestión de pedidos en entorno SAP</p>
+            </div>
+
+            <div class="project-meta">
+                <div class="meta-grid">
+                    <div>
+                        <strong>Cliente:</strong> Curso ABAP ABP-4AV04-F21
+                    </div>
+                    <div>
+                        <strong>Fecha:</strong> Mayo 2025
+                    </div>
+                    <div>
+                        <strong>Módulos SAP:</strong> SD (Sales and Distribution)
+                    </div>
+                    <div>
+                        <strong>Rol:</strong> Desarrollador ABAP
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Desafío del Proyecto</h2>
+                <p>La solución estándar de SAP para gestión de pedidos de ventas resultaba demasiado compleja para las
+                    necesidades de un almacén pequeño. Se requería una solución simplificada que mantuviera la
+                    integridad de los procesos de venta pero con una interfaz y funcionalidad adaptada a operaciones de
+                    menor escala.</p>
+
+                <div class="tech-badges">
+                    <span class="tech-badge">SAP SD</span>
+                    <span class="tech-badge">ABAP OO</span>
+                    <span class="tech-badge">ALV Reports</span>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Arquitectura de la Solución</h2>
+                <p>Desarrollé una solución personalizada basada en las tablas estándar de SAP pero adaptadas a las
+                    necesidades específicas del cliente, creando dominios, elementos de datos, tablas y vistas de
+                    actualización. Además del diseño de las pantallas usando dynpros combinando eventos PBO, PAI, Funciones y POO</p>
+
+                <div class="architecture-diagram">
+                    <h3>Modelo de Datos</h3>
+
+                    <div class="feature-list">
+                        <div class="feature-card">
+                            <h4>Tabla ZVBAK_1355</h4>
+                            <p>Cabecera de pedidos (adaptación de VBAK)</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>Tabla ZVBAP_1355</h4>
+                            <p>Posiciones de pedidos (adaptación de VBAP)</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4>Tabla ZMARA_1355</h4>
+                            <p>Maestro de materiales personalizado</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Relaciones entre Tablas</h3>
+                <table class="table-diagram">
+                    <thead>
+                        <tr>
+                            <th>Tabla</th>
+                            <th>Campo</th>
+                            <th>Tipo</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ZVBAK_1355</td>
+                            <td>VBELN</td>
+                            <td>CHAR(10)</td>
+                            <td>Número de documento de ventas</td>
+                        </tr>
+                        <tr>
+                            <td>ZVBAP_1355</td>
+                            <td>VBELN</td>
+                            <td>CHAR(10)</td>
+                            <td>Número de documento de ventas (FK a ZVBAK)</td>
+                        </tr>
+                        <tr>
+                            <td>ZVBAP_1355</td>
+                            <td>MATNR</td>
+                            <td>CHAR(18)</td>
+                            <td>Número de material (FK a ZMARA)</td>
+                        </tr>
+                        <tr>
+                            <td>ZMARA_1355</td>
+                            <td>MATNR</td>
+                            <td>CHAR(18)</td>
+                            <td>Número de material (clave principal)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="project-section">
+                <h2>Funcionalidades Implementadas</h2>
+
+                <div class="feature-list">
+                    <div class="feature-card">
+                        <h4>Gestión Integral de Pedidos</h4>
+                        <ul>
+                            <li>Creación de nuevos pedidos</li>
+                            <li>Añadir/eliminar posiciones</li>
+                            <li>Visualización completa</li>
+                            <li>Eliminación de pedidos</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>Reporte ALV de Pedidos</h4>
+                        <ul>
+                            <li>Pantalla de selección con filtros</li>
+                            <li>Combinación de campos ZVBAK y ZVBAP</li>
+                            <li>Implementado con CL_SALV_TABLE</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>Gestión de Materiales</h4>
+                        <ul>
+                            <li>Ayuda de búsqueda para MATNR</li>
+                            <li>Vista de actualización (SM30)</li>
+                            <li>Clave externa entre ZVBAP y ZMARA</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>Rango Numérico Automático</h4>
+                        <ul>
+                            <li>Generación automática de VBELN</li>
+                            <li>Valores únicos del 1 al 9999999999</li>
+                            <li>Implementado con NUMBER_GET_NEXT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Capturas del Sistema</h2>
+                <div class="project-gallery">
+
+                    <div class="project-gallery-item">
+                        <h3>Interfaz principal</h3>
+                        <p>Para el diseño de la interfaz principal he optado por algo más óptimo de lo que estamos
+                            acostumbrados a encontrar en sap, de primera vista podemos encontrar que en la tabla de la
+                            izquierda automáticamente se cargan todos los pedidos de la tabla ZVBAK, y arriba tenmos 4
+                            pulsadores esenciales. Los pedidos se crean de manera automática una vez pulsas el botón
+                            Crear Pedido añadiendo el usuario actual, fecha y número de pedido usando para este último
+                            un generador de rango número automático</p>
+                        <br>
+                        <img src="../assets/Captura 1.png" alt="Pantalla de gestión de pedidos">
+                    </div>
+                    <br>
+                    <div class="project-gallery-item">
+                        <h3>Añadir material al pedido</h3>
+                        <p>Una vez hayamos seleccionado un pedido y hayamos pulsado el botón Visualizar Pedido, se cargarán los datos del pedido en el bloque superior izquierdo y simultáneamente los materiales de este en la tabla inferior, para añadir un material sólo tendremos que pulsar al botón de añadir, se nos abrirá una ventana de dialogo en la que está  vinculada una ayuda de búsqueda para los materíales</p>
+                        <br>
+                        <img src="../assets/Captura 2.png" alt="Reporte ALV de pedidos">
+                    </div>
+                    <br>
+                    <div class="project-gallery-item">
+                        <h3>Transacción para visualizar pedidos</h3>
+                        <p>Además he realizado una transacción para poder visualizar los todos los pedidos junto con los materiales, haciendo uso de join en consultas a la BBDD de SAP</p>
+                        <br>
+                        <img src="../assets/Captura 6.png" alt="Configuración de rangos numéricos">
+                        <br>
+                        <img src="../assets/Captura 7.png" alt="Configuración de rangos numéricos">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Tecnologías Utilizadas</h2>
+                <div class="tech-badges">
+                    <span class="tech-badge">ABAP</span>
+                    <span class="tech-badge">ABAP OO</span>
+                    <span class="tech-badge">SAP SD</span>
+                    <span class="tech-badge">ALV Reports</span>
+                    <span class="tech-badge">SAP GUI</span>
+                    <span class="tech-badge">Dynpro</span>
+                    <span class="tech-badge">SAP Data Dictionary</span>
+                    <span class="tech-badge">SM30</span>
+                    <span class="tech-badge">SE11</span>
+                    <span class="tech-badge">SE38</span>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h2>Resultados y Aprendizajes</h2>
+                <div class="feature-list">
+                    <div class="feature-card">
+                        <h4>Logros Técnicos</h4>
+                        <ul>
+                            <li>Reducción en tiempo de gestión de pedidos</li>
+                            <li>Eliminación de funcionalidades innecesarias del estándar SAP</li>
+                            <li>Implementación de sistema de numeración automático</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>Habilidades Desarrolladas</h4>
+                        <ul>
+                            <li>Diseño y creación de pantallas dynpro</li>
+                            <li>Diseño de tablas personalizadas en SAP</li>
+                            <li>Creación de transacciones complejas</li>
+                            <li>Implementación de informes ALV avanzados</li>
+                            <li>Gestión de rangos numéricos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

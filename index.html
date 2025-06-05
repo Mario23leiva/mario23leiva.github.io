@@ -1,14 +1,233 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <script type="module" crossorigin src="assets/index-DTFaQjiU.js"></script>
-    <link rel="stylesheet" crossorigin href="assets/index-DEiUwBKd.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Leiva</title>
+    <meta name="description"
+        content="Portfolio profesional de Mario Leiva, programador ABAP con experiencia en desarrollo SAP y aplicaciones web">
+    <meta property="og:locale" content="es_ES">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Barra de Navegación -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">ML</a>
+            <ul>
+                <li><a href="#about" data-translate="nav_about">Sobre Mí</a></li>
+                <li><a href="#projects" data-translate="nav_projects">Proyectos</a></li>
+                <li><a href="#experience" data-translate="nav_experience">Experiencia</a></li>
+                <li><a href="#contact" data-translate="nav_contact">Contacto</a></li>
+            </ul>
+            <!-- <div class="language-switcher">
+                <button data-lang="es" class="active">ES</button>
+                <button data-lang="en">EN</button>
+            </div> -->
+            <button class="menu-hamburguesa">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container">
+            <h1 data-translate="hero_title">Hola, soy <span>Mario Leiva</span></h1>
+            <p data-translate="hero_subtitle">Programador ABAP & Desarrollador Web</p>
+            <a href="#about" class="btn-primary" data-translate="hero_button">Sobre mí</a>
+        </div>
+    </header>
+
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2 data-translate="about_title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-translate="about_subtitle">Programador ABAP & Desarrollador Web</h3>
+                    <p>De mis 22 años, los últimos 4 los he dedicado a formarme en el ámbito de la programación. Gracias
+                        a mi constancia y esfuerzo he podido formarme, en gran parte, de manera autónoma realizando
+                        proyectos extracurriculares para fortalecer mis habilidades, actuando de manera resolutiva y
+                        positiva ante situaciones frustrantes. Siempre buscando soluciones de manera creativa y
+                        eficiente, sin dejar de lado el código limpio.</p>
+                    <h4 data-translate="skills_title">Habilidades Técnicas:</h4>
+                    <ul class="skills-list">
+                        <li>SAP</li>
+                        <li>ABAP</li>
+                        <li>SQL</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+
+                    <h4 data-translate="languages_title">Idiomas:</h4>
+                    <ul class="languages-list">
+                        <li>Español <span>(Nativo)</span></li>
+                        <li>Catalán <span>(Nativo)</span></li>
+                        <li>Inglés <span>(Avanzado)</span></li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="profile.jpg" alt="Mario Leiva">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 data-translate="projects_title">Mis Proyectos ABAP</h2>
+            <!-- En la sección de proyectos -->
+            <div class="projects-grid">
+                <!-- Proyecto SGPV -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Sistema Gestor de Pedidos de Ventas</h3>
+                        <p>Solución ABAP personalizada para gestión de pedidos en SAP</p>
+                        <div class="tech-badges">
+                            <span>ABAP</span>
+                            <span>SAP SD</span>
+                            <span>ALV Reports</span>
+                        </div>
+                        <a href="proyectos/gestion-inventario.html" class="btn-details">
+                            Ver detalles
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Proyecto Nivel 2 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Sistema de Gestión de Empleados</h3>
+                        <p>Gestión de empleados de compañías aéreas en SAP</p>
+                        <div class="tech-badges">
+                            <span>ABAP</span>
+                            <span>Dynpro</span>
+                            <span>TabScrip</span>
+                        </div>
+                        <a href="proyectos/gestion-empleados.html" class="btn-details">
+                            Ver detalles
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Más proyectos... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Experiencia -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 data-translate="experience_title">Experiencia Profesional</h2>
+            <div class="experience-timeline">
+                <!-- Experiencia 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>COS Aeropuerto de Barcelona – Técnico S.O.</h3>
+                        <p class="timeline-date" data-translate="exp1_date">01/2024 – Presente</p>
+                        <p data-translate="exp1_desc">Implementé mejoras de procesos que redujeron el tiempo de
+                            resolución de tickets en un 25%, aumentando la disponibilidad del sistema y satisfacción del
+                            usuario. Gestioné roles y permisos para más de 300 empleados en entornos Windows y Linux.
+                        </p>
+                        <ul class="languages-list">
+                            <li>Active Directory</li>
+                            <li>Bash</li>
+                            <li>Windows Server</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experiencia 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>BrainWork SL – Desarrollador de Software</h3>
+                        <p class="timeline-date" data-translate="exp2_date">06/2023 – 09/2023</p>
+                        <p data-translate="exp2_desc">Desarrollé y optimicé software de gestión empresarial en .NET para
+                            5 clientes clave, logrando 20% de mejora en rendimiento y reduciendo errores en 30%.
+                            Entregué 100% de cambios solicitados dentro de plazos establecidos.</p>
+                        <ul class="languages-list">
+                            <li>.NET</li>
+                            <li>C#</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experiencia 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Escola Joan Salamero – Diseñador Web</h3>
+                        <p class="timeline-date" data-translate="exp3_date">02/2021 – 06/2021</p>
+                        <p data-translate="exp3_desc">Diseñé, desarrollé y lancé sitio web responsivo que aumentó
+                            visitas en 70%. Gestioné contenido manteniendo 100% tiempo de actividad. Coordiné con equipo
+                            administrativo para mejorar usabilidad en 25%.</p>
+                        <ul class="languages-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Certificados -->
+    <section id="certificates" class="section bg-light">
+        <div class="container">
+            <h2 data-translate="certificates_title">Certificados</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <h3>SAP C ABAPD 2309</h3>
+                    <p data-translate="cert1_desc">Back-End Developer - ABAP Cloud</p>
+                    <p class="cert-date">06/2025</p>
+                </div>
+
+                <div class="certificate-card">
+                    <h3>DAW</h3>
+                    <p data-translate="cert2_desc">Técnico Superior en Desarrollo de Aplicaciones Web</p>
+                    <p class="cert-date">06/2024</p>
+                </div>
+
+                <div class="certificate-card">
+                    <h3>DAM</h3>
+                    <p data-translate="cert3_desc">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</p>
+                    <p class="cert-date">06/2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 data-translate="contact_title">Contacto</h2>
+            <div class="contact-wrapper">
+                <p data-translate="contact_text">¿Interesado en mi trabajo? Contáctame:</p>
+                <a href="mailto:marioleivatorres23@gmail.com" class="contact-email">marioleivatorres23@gmail.com</a>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/mleiva23" target="_blank"
+                        data-translate="social_linkedin"><strong>LinkedIn</strong></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <script src="js/translations.js"></script> -->
+    <script src="js/script.js"></script>
+</body>
+
 </html>
